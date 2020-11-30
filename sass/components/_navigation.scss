@@ -1,0 +1,92 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.site__nav {
+  display: inline-flex;
+  align-items: center;
+  width: 294px;
+  .item {
+    display: inline-block;
+    color: $title-cl;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+  }
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .link {
+    position: relative;
+    display: block;
+    transition-timing-function: $timing-function;
+    transition-duration: $time;
+  }
+}
+.site__nav .link:hover:after,
+.current:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: $accent-cl;
+  border-radius: 2px;
+  margin: 0;
+  opacity: 1;
+  transition-timing-function: $timing-function;
+  transition-duration: $time;
+}
+
+.auth__nav {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: $main-text-cl;
+  align-items: center;
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.email__icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.tell__icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.link__mail {
+  display: flex;
+  align-items: center;
+  transition-timing-function: $timing-function;
+  transition-property: fill;
+  transition-duration: $time;
+  &:focus .email__icon,
+  &:hover .email__icon {
+    fill: $accent-cl;
+  }
+}
+
+.link__tell {
+  display: flex;
+  align-items: center;
+  transition-timing-function: $timing-function;
+  transition-property: fill;
+  transition-duration: $time;
+  &:focus .tell__icon,
+  &:hover .tell__icon {
+    fill: $accent-cl;
+  }
+}

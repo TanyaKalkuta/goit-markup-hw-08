@@ -1,0 +1,37 @@
+.hero {
+  height: 600px;
+  text-align: center;
+  background-color: $hero-cl;
+  &__fon {
+    display: inline-flex;
+    width: 1600px;
+    height: 600px;
+    background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/herofoto.jpg") no-repeat center;
+  }
+
+  &__content {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white-cl;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}

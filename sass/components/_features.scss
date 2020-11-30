@@ -1,0 +1,30 @@
+.special {
+  padding-top: 86px;
+  padding-bottom: 94px;
+  /*background-color: violet;*/
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  height: 251px;
+  &__box {
+    width: 270px;
+  }
+}
+
+.features__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $section-cl;
+  height: 120px;
+}
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+.features__p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

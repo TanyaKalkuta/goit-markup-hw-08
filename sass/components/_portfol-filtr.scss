@@ -1,0 +1,14 @@
+.filtr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.nav__progect {
+  display: inline-flex;
+  min-width: 611px;
+  height: 54px;
+  padding-bottom: 16px;
+  .item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
