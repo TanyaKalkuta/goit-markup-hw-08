@@ -1,9 +1,13 @@
 .exerciser {
+  display: none;
   padding-bottom: 94px;
   &__list {
     display: flex;
     justify-content: space-between;
     height: 294px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
   }
 }
 .thumb {

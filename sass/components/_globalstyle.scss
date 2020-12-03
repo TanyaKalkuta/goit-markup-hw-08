@@ -84,3 +84,8 @@ img {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+.details__title {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}

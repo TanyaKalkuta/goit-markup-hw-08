@@ -1,19 +1,37 @@
 .progect__set {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: -30px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: -30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: -30px;
+  }
 }
 
 .progect__item {
-  min-width: 370px;
-  height: 404px;
+  margin-top: 30px;
+  min-width: 450px;
+  min-height: 404px;
   background-color: $white-cl;
   transition-timing-function: $timing-function;
   transition-property: box-shadow;
   transition-duration: $time;
-  &:nth-child(-n + 6) {
-    margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    width: calc(100% / 2 - 30px);
+    min-width: 354px;
+    margin-left: 30px;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: calc(100% / 3 - 30px);
+    min-width: 370px;
+    margin-left: 30px;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -51,7 +69,6 @@
   }
 }
 .progect__content {
-  width: 370px;
   height: 110px;
   padding-left: 24px;
   padding-right: 24px;

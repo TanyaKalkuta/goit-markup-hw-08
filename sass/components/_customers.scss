@@ -4,11 +4,22 @@
 }
 .customer {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -30px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: -30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: -30px;
+  }
 
   &__link {
     display: flex;
-    width: 170px;
+    margin-top: 30px;
+    width: calc(100% / 2 - 30px);
+    /* width: 210px; */
     height: 90px;
     align-items: center;
     justify-content: center;
@@ -20,6 +31,16 @@
     transition-timing-function: $timing-function;
     transition-property: border-color;
     transition-duration: $time;
+    @media screen and (min-width: $tablet) {
+      width: calc(100% / 3 - 30px);
+      min-width: 226px;
+      margin-left: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      min-width: 170px;
+      margin-left: 30px;
+    }
     &:hover,
     &:focus {
       border-color: $accent-cl;
