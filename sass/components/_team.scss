@@ -1,10 +1,11 @@
 .team-bg {
   background-color: $section-cl;
-  /* width: 1600px; */
+  height: 2791px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    height: 1285px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -12,10 +13,8 @@
     height: 708px;
     padding-top: 94px;
     padding-bottom: 94px;
-    padding-left: 215px;
-    padding-right: 215px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: auto px;
+    padding-right: auto px;
   }
 }
 
@@ -34,26 +33,27 @@
 
 .team__item {
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 36px;
   text-align: center;
   background-color: $white-cl;
   min-width: 450px;
-  max-height: 482px;
+  height: 622px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   @media screen and (min-width: $tablet) {
     width: calc(100% / 2 - 30px);
     min-width: 354px;
-    max-height: 422px;
+    height: 536px;
     margin-left: 30px;
+    padding-bottom: 24px;
   }
 
   @media screen and (min-width: $desktop) {
     width: calc(100% / 4 - 30px);
     min-width: 270px;
-    max-height: 422px;
-    margin-left: 30px;
+    max-height: 428px;
+    padding-bottom: 30px;
   }
 }
 
@@ -74,5 +74,9 @@
   letter-spacing: 0.03em;
   color: $main-text-cl;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
 }

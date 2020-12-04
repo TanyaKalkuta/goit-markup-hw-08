@@ -115,12 +115,19 @@ img {
 .section__title {
   font-family: inherit;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   text-align: center;
   color: #212121;
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .details__title {
@@ -141,7 +148,7 @@ img {
 }
 
 .container {
-  /* width: 1200px; */
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -208,15 +215,11 @@ img {
   }
 }
 
-.container__footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 @media screen and (min-width: 768px) {
   .container__footer {
-    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -237,17 +240,26 @@ img {
 
 .logo {
   display: inline-flex;
-  width: 145px;
-  height: 31px;
+  width: 154px;
+  height: 28px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 145px;
+    height: 31px;
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .header__container .logo {
@@ -614,13 +626,14 @@ img {
 
 .team-bg {
   background-color: #f5f4fa;
-  /* width: 1600px; */
+  height: 2791px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .team-bg {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    height: 1285px;
   }
 }
 
@@ -630,10 +643,8 @@ img {
     height: 708px;
     padding-top: 94px;
     padding-bottom: 94px;
-    padding-left: 215px;
-    padding-right: 215px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: auto px;
+    padding-right: auto px;
   }
 }
 
@@ -657,11 +668,11 @@ img {
 
 .team__item {
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 36px;
   text-align: center;
   background-color: #ffffff;
   min-width: 450px;
-  max-height: 482px;
+  height: 622px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -670,8 +681,9 @@ img {
   .team__item {
     width: calc(100% / 2 - 30px);
     min-width: 354px;
-    max-height: 422px;
+    height: 536px;
     margin-left: 30px;
+    padding-bottom: 24px;
   }
 }
 
@@ -679,8 +691,8 @@ img {
   .team__item {
     width: calc(100% / 4 - 30px);
     min-width: 270px;
-    max-height: 422px;
-    margin-left: 30px;
+    max-height: 428px;
+    padding-bottom: 30px;
   }
 }
 
@@ -701,7 +713,13 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__position {
+    margin-bottom: 16px;
+  }
 }
 
 .social__icons {
@@ -747,7 +765,29 @@ img {
 .footer__social {
   width: 206px;
   height: 80px;
-  margin-left: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__social {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    margin-left: 70px;
+    text-align: start;
+    margin-bottom: 0;
+  }
 }
 
 .footer__social .details__title {
@@ -788,24 +828,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
-}
-
-@media screen and (min-width: 768px) {
-  .customer {
-    margin-left: -30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .customer {
-    margin-left: -30px;
-  }
+  margin-left: -30px;
 }
 
 .customer__link {
   display: flex;
-  width: calc(100% / 2 - 30px);
-  /* width: 210px; */
+  margin-top: 30px;
+  margin-left: 30px;
   height: 90px;
   align-items: center;
   justify-content: center;
@@ -819,18 +848,23 @@ img {
   transition-duration: 250ms;
 }
 
+@media screen and (min-width: 480px) {
+  .customer__link {
+    width: calc(100% / 2 - 30px);
+    min-width: 210px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .customer__link {
     width: calc(100% / 3 - 30px);
     min-width: 226px;
-    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .customer__link {
     min-width: 170px;
-    margin-left: 30px;
   }
 }
 
@@ -852,18 +886,49 @@ img {
 }
 
 .dark__bg {
-  height: 252px;
+  height: 603px;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  /* padding-left: auto;
+  padding-right: auto; */
+}
+
+@media screen and (min-width: 768px) {
+  .dark__bg {
+    height: 463px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .dark__bg {
+    height: 252px;
+  }
 }
 
 .contact__footer {
-  width: 231px;
+  width: 232px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__footer {
+    width: 231px;
+    text-align: start;
+    margin-bottom: 0;
+  }
 }
 
 .addres {
-  width: 231px;
+  width: 232px;
   height: 81px;
   font-style: normal;
 }
@@ -884,9 +949,22 @@ img {
 }
 
 .footer__form {
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
+  width: 450px;
+  height: 156px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__form {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+  }
 }
 
 .footer__form .details__title {
@@ -899,8 +977,15 @@ img {
   display: flex;
 }
 
+@media screen and (max-width: 1200px) {
+  .form__footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .form__footer input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -911,6 +996,14 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__footer input {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 /* форма модального окна */

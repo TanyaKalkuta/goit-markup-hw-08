@@ -1,7 +1,16 @@
 .footer__form {
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
+  width: 450px;
+  height: 156px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+  }
+
   .details__title {
     color: #ffffff;
     margin-top: 0;
@@ -11,9 +20,15 @@
 
 .form__footer {
   display: flex;
+
+  @media screen and (max-width: $desktop) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
+
 .form__footer input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -24,6 +39,12 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 /* форма модального окна */

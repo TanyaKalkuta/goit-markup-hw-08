@@ -66,12 +66,16 @@ img {
 .section__title {
   font-family: inherit;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   text-align: center;
   color: $title-cl;
   margin-top: 0;
   margin-bottom: 50px;
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .details__title {
