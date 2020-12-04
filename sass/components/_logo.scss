@@ -1,6 +1,6 @@
 .logo {
   display: inline-flex;
-  width: 154px;
+  width: 134px;
   height: 28px;
   font-family: Raleway;
   font-style: normal;
@@ -20,8 +20,12 @@
   }
 }
 .header__container .logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
 }
 .logo__studio {
   color: $footer-cl;

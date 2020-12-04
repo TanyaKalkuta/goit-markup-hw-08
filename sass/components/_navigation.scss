@@ -43,28 +43,54 @@
 }
 
 .auth__nav {
-  display: flex;
+  /* display: flex; */
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.02em;
   color: $main-text-cl;
-  align-items: center;
-  .item:not(:last-child) {
-    margin-right: 50px;
+
+  /* align-items: center; */
+  @media screen and (max-width: $desktop) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    .link {
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.143;
+    align-items: center;
+    .item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .email__icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+  @media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 
 .tell__icon {
   width: 10px;
-  height: 16px;
-  margin-right: 10px;
+  height: 14px;
+  margin-right: 8px;
+  @media screen and (min-width: $desktop) {
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 
 .link__mail {

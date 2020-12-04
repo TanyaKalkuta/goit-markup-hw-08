@@ -42,11 +42,8 @@
   display: none;
   justify-content: flex-end;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }

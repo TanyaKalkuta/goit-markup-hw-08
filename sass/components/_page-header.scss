@@ -2,6 +2,10 @@
   height: 80px;
   border-bottom: 1px solid #ececec;
   .logo {
-    margin-right: 93px;
+    margin-right: 88px;
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 93px;
+    }
   }
 }
