@@ -57,7 +57,7 @@
 
     .link {
       padding-top: 0;
-      padding-bottom: 10px;
+      padding-bottom: 0px;
     }
   }
 
@@ -102,6 +102,9 @@
   &:focus .email__icon,
   &:hover .email__icon {
     fill: $accent-cl;
+  }
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 10px;
   }
 }
 

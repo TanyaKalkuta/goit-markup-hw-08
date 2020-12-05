@@ -348,7 +348,7 @@ img {
   }
   .auth__nav .link {
     padding-top: 0;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 }
 
@@ -402,6 +402,12 @@ img {
 .link__mail:focus .email__icon,
 .link__mail:hover .email__icon {
   fill: #2196f3;
+}
+
+@media screen and (max-width: 1200px) {
+  .link__mail {
+    margin-bottom: 10px;
+  }
 }
 
 .link__tell {
