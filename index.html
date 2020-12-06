@@ -21,6 +21,18 @@
           <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li class="item"><a href="#contacts" class="link">Контакты</a></li>
         </ul>
+
+        <button
+         type="button"
+         class="menu-btn is-open"
+         aria-expanded="false"
+         aria-controls="mobile-menu"
+         data-menu-button>
+          <svg width="40" hight="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/icons/sprite.svg#icon-gross"></use>
+            <use class="icon-menu" href="./images/icons/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         </nav>
 
         <ul class="list auth__nav">
@@ -38,17 +50,39 @@
       </div>
     </header>
 
-    <main>
+    <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+      <ul class="list mobile-site__nav">
+        <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+        <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+        <li class="item"><a href="#contacts" class="link">Контакты</a></li>
+        </ul>
+
+      <ul class="list mobile-auth__nav">
+        <li class="item"><a href="mailto:info@devstudio.com" class="link link__mail">
+          <svg class="email__icon">
+            <use href="./images/icons/sprite.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com</a></li>
+        <li class="item"><a href="tel:+380961111111" class="link link__tell">
+          <svg class="tell__icon">
+            <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+          </svg>
+          +38 096 111 11 11</a></li>
+      </ul>
+    </div>
+
+
+      <main>
       <!-- герой -->
       <section class="hero">
         <div class="hero__fon">
-          <div class="hero__content">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button class="btn" type="button" data-modal-open>Заказать услугу</button>
-          </div>
-
+          
+            <div class="hero__content">
+              <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+              <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+            </div>
         </div>
-              
+                              
       </section>
 
       <!-- особенности -->
@@ -493,6 +527,8 @@
 
 
 
-    <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/modal.js"></script>
+
   </body>
 </html>

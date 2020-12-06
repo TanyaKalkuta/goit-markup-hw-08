@@ -1,8 +1,15 @@
 .page__header {
-  height: 80px;
+  height: 60px;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+  }
+
   .logo {
-    margin-right: 88px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 88px;
+    }
 
     @media screen and (min-width: $desktop) {
       margin-right: 93px;

@@ -2,12 +2,22 @@
   display: flex;
   align-items: center;
   margin-right: auto;
+  justify-content: space-between;
+
+  @media screen and (max-width: $tablet - 1) {
+    flex-grow: 1;
+  }
 }
 
 .site__nav {
-  display: inline-flex;
+  display: none;
   align-items: center;
   width: 294px;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+  }
+
   .item {
     display: inline-block;
     color: $title-cl;
@@ -50,7 +60,10 @@
   letter-spacing: 0.02em;
   color: $main-text-cl;
 
-  /* align-items: center; */
+  @media screen and (max-width: $tablet - 1) {
+    display: none;
+  }
+
   @media screen and (max-width: $desktop) {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -103,7 +116,7 @@
   &:hover .email__icon {
     fill: $accent-cl;
   }
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: $desktop - 1px) {
     margin-bottom: 10px;
   }
 }
@@ -117,5 +130,92 @@
   &:focus .tell__icon,
   &:hover .tell__icon {
     fill: $accent-cl;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: $white-cl;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  .item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.167px;
+    letter-spacing: 0.02em;
+    color: $title-cl;
+  }
+}
+
+.mobile-site__nav {
+  text-align: center;
+  margin-bottom: 60px;
+
+  .item {
+    display: flex;
+    color: $title-cl;
+    justify-content: center;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  & .link {
+    position: relative;
+    display: block;
+    transition-timing-function: $timing-function;
+    transition-duration: $time;
+  }
+}
+.mobile-site__nav .link:hover:after,
+.current:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: $accent-cl;
+  border-radius: 2px;
+  margin: 0;
+  opacity: 1;
+  transition-timing-function: $timing-function;
+  transition-duration: $time;
+}
+
+.mobile-auth__nav {
+  text-align: center;
+
+  .item {
+    color: $main-text-cl;
+  }
+
+  .link {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0px;
+    justify-content: center;
+    transition-timing-function: $timing-function;
+    transition-duration: $time;
+  }
+  & .link__mail {
+    margin-bottom: 16px;
   }
 }
