@@ -10,13 +10,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/herofoto.jpg") no-repeat center;
+      url("../images/hero/mobile/hero-m.jpg") no-repeat center;
     @media screen and (min-width: 768px) {
       width: 768px;
       height: 400px;
     }
 
     @media screen and (min-width: 1200px) {
+      min-width: 1200px;
       max-width: 1600px;
       height: 600px;
     }

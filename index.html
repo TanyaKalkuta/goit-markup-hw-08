@@ -28,7 +28,7 @@
          aria-expanded="false"
          aria-controls="mobile-menu"
          data-menu-button>
-          <svg width="40" hight="40" aria-label="Переключатель мобильного меню">
+          <svg width="24" height="24" aria-label="Переключатель мобильного меню">
             <use class="icon-cross" href="./images/icons/sprite.svg#icon-menu"></use>
             <use class="icon-menu" href="./images/icons/sprite.svg#icon-gross"></use>
           </svg>
@@ -164,7 +164,13 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="list team__list">
               <li class="team__item">
-                <img src="./images/team/foto1.jpg" alt="Игорь Демьяненко"/>
+                <picture>
+                  <source srcset="./images/team/desktop/foto1.jpg 1x, ./images/team/desktop/foto1@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/team/tablet/foto1.jpg 1x, ./images/team/tablet/foto1@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/team/mobile/foto1.jpg 1x, ./images/team/mobile/foto1@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/team/desktop/foto1.jpg" alt="Игорь Демьяненко" />
+                </picture>
+                
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
                 <ul class="list social__icons">
@@ -205,7 +211,13 @@
               </li>
             
               <li class="team__item">
-                <img src="./images//team/foto2.jpg" alt="Ольга Репина"/>
+                <picture>
+                  <source srcset="./images/team/desktop/foto2.jpg 1x, ./images/team/desktop/foto2@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/team/tablet/foto2.jpg 1x, ./images/team/tablet/foto2@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/team/mobile/foto2.jpg 1x, ./images/team/mobile/foto2@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images//team/desktop/foto2.jpg" alt="Ольга Репина" />
+                </picture>
+                
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
                 <ul class="list social__icons">
@@ -246,7 +258,14 @@
               </li>
             
               <li class="team__item">
-                <img src="./images//team/foto3.jpg" alt="Николай Тарасов"/>
+                 <picture>
+                  <source srcset="./images/team/desktop/foto3.jpg 1x, ./images/team/desktop/foto3@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/team/tablet/foto3.jpg 1x, ./images/team/tablet/foto3@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/team/mobile/foto3.jpg 1x, ./images/team/mobile/foto3@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images//team/desktop/foto3.jpg" alt="Николай Тарасов" />
+                </picture>
+                
+                
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
                 <ul class="list social__icons">
@@ -287,7 +306,13 @@
               </li>
             
               <li class="team__item">
-                <img src="./images//team/foto4.jpg" alt="Михаил Ермаков"/>
+                 <picture>
+                  <source srcset="./images/team/desktop/foto4.jpg 1x, ./images/team/desktop/foto4@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/team/tablet/foto4.jpg 1x, ./images/team/tablet/foto4@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/team/mobile/foto4.jpg 1x, ./images/team/mobile/foto4@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images//team/desktop/foto4.jpg" alt="Михаил Ермаков" />
+                </picture>
+                
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
                 <ul class="list social__icons">
