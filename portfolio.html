@@ -8,23 +8,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/portfolmain.min.css">
 </head>
-
 <body>
 <!-- шапка сайта -->
 
-<header class="page__header">
-    <div class="container header__container">
-        <nav class="navigation">
-            <a href="./index.html" class="logo"> Web<span class="logo__studio">Studio</span></a>
-
-            <ul class="list site__nav">
-                <li class="item"><a href="./index.html" class="link">Студия</a></li>
-                <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li class="item"><a href="#contacts" class="link">Контакты</a></li>
+    <header class="page__header">
+        <div class="container header__container">
+            <nav class="navigation">
+                <a href="./index.html" class="logo"> Web<span class="logo__studio">Studio</span></a>
+    
+                <ul class="list site__nav">
+                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="#contacts" class="link">Контакты</a></li>
+                </ul>
+    
+                <button type="button" class="menu-btn is-open" aria-expanded="false" aria-controls="mobile-menu"
+                    data-menu-button>
+                    <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/icons/sprite.svg#icon-menu"></use>
+                        <use class="icon-menu" href="./images/icons/sprite.svg#icon-gross"></use>
+                    </svg>
+                </button>
+            </nav>
+    
+            <ul class="list auth__nav">
+                <li class="item"><a href="mailto:info@devstudio.com" class="link link__mail">
+                        <svg class="email__icon">
+                            <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="link link__tell">
+                        <svg class="tell__icon">
+                            <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
             </ul>
-        </nav>
-
-        <ul class="list auth__nav">
+        </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobile-menu" data-menu>
+        <ul class="list mobile-site__nav">
+            <li class="item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+            <li class="item"><a href="#contacts" class="link">Контакты</a></li>
+        </ul>
+    
+        <ul class="list mobile-auth__nav">
             <li class="item"><a href="mailto:info@devstudio.com" class="link link__mail">
                     <svg class="email__icon">
                         <use href="./images/icons/sprite.svg#icon-envelope"></use>
@@ -37,7 +66,6 @@
                     +38 096 111 11 11</a></li>
         </ul>
     </div>
-</header>
 
 <main>
     <div class="progect__container">
@@ -344,6 +372,6 @@
         </div>
     
     </footer>
-
+<script src="./js/menu.js"></script>
 </body>
 </html>

@@ -146,6 +146,7 @@
   visibility: hidden;
 
   &.is-open {
+    z-index: 20;
     opacity: 1;
     visibility: visible;
   }
