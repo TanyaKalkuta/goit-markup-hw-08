@@ -69,7 +69,7 @@
   }
 }
 .progect__content {
-  height: 110px;
+  min-height: 110px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -88,11 +88,11 @@
   margin-top: 0px;
   margin-bottom: 4px;
 }
-.projects-title {
+/* .projects-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} */
 
 .progect__position {
   font-weight: 400;

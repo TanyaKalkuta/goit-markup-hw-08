@@ -24,6 +24,9 @@
         ),
         url("../images/hero/mobile/hero-m@2х.jpg") no-repeat center;
     }
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
 
     @media screen and (min-width: 768px) {
       width: 768px;
