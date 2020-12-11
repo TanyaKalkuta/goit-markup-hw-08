@@ -12,6 +12,12 @@
   }
 }
 
+.progect__card {
+  @media screen and (min-width: $tablet) {
+    height: 404px;
+  }
+}
+
 .progect__item {
   margin-top: 30px;
   background-color: $white-cl;
@@ -21,7 +27,7 @@
 
   @media screen and (min-width: $mobile) {
     min-width: 450px;
-    min-height: 404px;
+    /* min-height: 404px; */
   }
 
   @media screen and (min-width: $tablet) {
@@ -60,11 +66,23 @@
   line-height: 1.556;
   letter-spacing: 0.03em;
   color: $white-cl;
-  padding: 63px 24px;
+  padding: 77px 24px;
+  /* padding: 63px 24px; */
   opacity: 0;
   transition-timing-function: $timing-function;
   transition-property: background-color, transform, opacity;
   transition-duration: $time;
+
+  @media screen and (max-width: $mobile) {
+    padding: 85px 24px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 63px 24px;
+  }
+
   .progect__link:hover &,
   .progect__link:focus & {
     opacity: 1;
