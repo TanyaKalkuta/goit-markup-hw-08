@@ -139,7 +139,7 @@
   height: 14px;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
   margin-right: 10px;
   margin-top: 20px;
   padding-left: 23px;
@@ -208,7 +208,7 @@
   letter-spacing: 0.03em;
 
   @media screen and (max-width: $mobile) {
-    margin-top: 4px;
+    margin-top: 5px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;

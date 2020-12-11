@@ -14,12 +14,16 @@
 
 .progect__item {
   margin-top: 30px;
-  min-width: 450px;
-  min-height: 404px;
   background-color: $white-cl;
   transition-timing-function: $timing-function;
   transition-property: box-shadow;
   transition-duration: $time;
+
+  @media screen and (min-width: $mobile) {
+    min-width: 450px;
+    min-height: 404px;
+  }
+
   @media screen and (min-width: $tablet) {
     width: calc(100% / 2 - 30px);
     min-width: 354px;
