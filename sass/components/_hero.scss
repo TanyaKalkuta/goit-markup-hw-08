@@ -1,17 +1,49 @@
-.hero {
+.hero .container {
   text-align: center;
+}
+
+.hero {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $hero-cl;
-  &__fon {
-    display: inline-flex;
-    width: 480px;
-    height: 400px;
+  background-size: cover;
+  background: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero/mobile/hero-m.jpg") no-repeat center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-size: cover;
+    width: 100%;
     background: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/hero/mobile/hero-m.jpg") no-repeat center;
+      url("../images/hero/mobile/hero-m@2х.jpg") no-repeat center;
+  }
+
+  @media screen and (min-width: $mobile) {
+    /* width: 480px; */
+    height: 400px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-width: 768px;
+    height: 400px;
+    background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/tablet/hero-t.jpg") no-repeat center;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
@@ -24,62 +56,35 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/hero/mobile/hero-m@2х.jpg") no-repeat center;
+        url("../images/hero/tablet/hero-t@2x.jpg") no-repeat center;
     }
-    @media screen and (max-width: $mobile) {
-      width: 100%;
-    }
+  }
 
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      height: 400px;
-      background: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url("../images/hero/tablet/hero-t.jpg") no-repeat center;
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    background-size: cover;
+    background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/desktop/hero-d.jpg") no-repeat center;
 
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (-webkit-min-device-pixel-ratio: 2),
-        screen and (-o-min-device-pixel-ratio: 2/1),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-size: cover;
-        background: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url("../images/hero/tablet/hero-t@2x.jpg") no-repeat center;
-      }
-    }
-
-    @media screen and (min-width: 1200px) {
-      min-width: 1200px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-size: cover;
       max-width: 1600px;
       height: 600px;
-      background-size: cover;
       background: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/hero/desktop/hero-d.jpg") no-repeat center;
-
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (-webkit-min-device-pixel-ratio: 2),
-        screen and (-o-min-device-pixel-ratio: 2/1),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-size: cover;
-        background: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url("../images/hero/desktop/hero-d@2x.jpg") no-repeat center;
-      }
+        url("../images/hero/desktop/hero-d@2x.jpg") no-repeat center;
     }
   }
 
